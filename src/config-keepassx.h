@@ -12,7 +12,9 @@
 #define KEEPASSX_PLUGIN_DIR ""
 #define KEEPASSX_DATA_DIR ""
 
+#ifdef Q_OS_LINUX
 #define HAVE_PR_SET_DUMPABLE 1
+#endif
 #define HAVE_RLIMIT_CORE 1
 /* #undef HAVE_PT_DENY_ATTACH */
 
