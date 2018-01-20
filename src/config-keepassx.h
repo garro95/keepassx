@@ -15,7 +15,11 @@
 #ifdef Q_OS_LINUX
 #define HAVE_PR_SET_DUMPABLE 1
 #endif
+
+#ifdef Q_OS_UNIX
 #define HAVE_RLIMIT_CORE 1
+#endif
+
 /* #undef HAVE_PT_DENY_ATTACH */
 
 #endif // KEEPASSX_CONFIG_KEEPASSX_H
